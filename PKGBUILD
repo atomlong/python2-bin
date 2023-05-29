@@ -6,7 +6,7 @@ pkgver=2.7.18_1
 _pybasever=2.7
 pkgrel=1
 pkgdesc="Python2 binaries for x86_64"
-arch=('x86_64')
+arch=('x86_64' 'armv7h' 'aarch64')
 url="https://python.org"
 license=('PSF')
 groups=()
@@ -23,9 +23,12 @@ install=
 changelog=
 noextract=()
 validpgpkeys=()
-source=("https://github.com/VanillaBase1lb/python2-bin-aur/releases/download/$pkgver/python2-build.tar.gz")
-md5sums=('d1a5929835018fa5ca18853c49c972ad')
-
+source_x86_64=("https://github.com/atomlong/python2-bin/releases/download/$pkgver/python2-build-amd64.tar.gz")
+source_armv7h=("https://github.com/atomlong/python2-bin/releases/download/$pkgver/python2-build-armv7.tar.gz")
+source_aarch64=("https://github.com/atomlong/python2-bin/releases/download/$pkgver/python2-build-arm64.tar.gz")
+md5sums_x86_64=('d1a5929835018fa5ca18853c49c972ad')
+md5sums_armv7h=('7f4470869d8240b68af9619f9e12ebe4')
+md5sums_aarch64=('997b80dc5218c96f1b2f82a14079ab11')
 
 package() {
 
